@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 24%;
+  background-color: white;
+
+}
+
+.app{
+  background-color: black;
+  
+}
+
+.header-container >img {
+  width: 340px;
+    height: 290px;
+    object-fit: fill;
+}
+
+.header-container{
+  padding-top: 3px;
+  display: flex;
+    justify-content: center;
+    
+}
+
+
+.name {
+  color: white;
+  font-size: 28px;
+  font-weight: 450;
+  margin: 0 auto;
+  letter-spacing: 1;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.job {
+  color: rgba(153, 129, 21, 0.907);
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+.btns {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.btns > button{
+  border-radius: 10px;
+    border-color: transparent;
+    padding-left: 1px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    width: 140px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.btns > button >img{
+  width: 26px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.btn > button > span{
+  vertical-align: middle;
+  font-size: 16px;
+  word-spacing: 1;
+}
+.btn-linkedin{
+  background-color: rgb(16, 86, 167);
+  color: white;
+}
+
+
+.Info-text > h2{
+  color: white;
+  font-size: 23px;
+  font-weight: 450;
+
+}
+.Info-text >p{
+  color: white;
+  font-size: 13px;
+  font-weight: 450;
+
+}
+.Info-text{
+  width: 352px;
+    height: 137px;
+    line-height: 1.08em;
+    padding: 12px;
+    margin: 1px auto;
+    text-align: justify;
+}
+
+.footer-container{
+  width: 337px;
+  height: 64px;
+  padding: 10px;
+  margin: 2px auto;
+  background-color: rgb(9, 38, 70);
+}
+.footer-image{
+  height: 30px;
+  filter: brightness(1.6);
+  margin: 10px;
+  align-self: center;
+}
+.footer-items{
+  margin: 2px 50px;
+}
