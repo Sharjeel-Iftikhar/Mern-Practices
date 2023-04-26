@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(11, 36, 52, 1);
+}
+
+.main--section {
+  background-color: rgba(245, 245, 245, 1);
+    position: absolute;
+    width: 60%;
+    top: 60px;
+    height: 85%;
+    left: 22%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.die--container{
+  display: grid;
+  grid-template: auto auto / repeat(5,1fr);
+  gap: 50px;
+}
+.die--face{
+  
+  width: 50px;
+  height: 50px;
+  margin: 8px auto;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.roll-dice {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035FF;
+  color: white;
+  font-size: 1.2rem;
+}
