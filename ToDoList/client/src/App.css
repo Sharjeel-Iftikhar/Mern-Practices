@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+  
+}
+body{
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgba(11, 36, 52, 1);
+
+}
+.header{
+  text-align: center;
+}
+.main--section{
+  background-color: rgba(245, 245, 245, 1);
+    position: absolute;
+    width: 60%;
+    top: 60px;
+    height: 80%;
+    left: 22%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form--section > input{
+  width: 100%;
+  size: 20px;
+  color: rgb(15, 37, 87);
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-bottom: 1px solid rgb(35, 34, 34);
+  background-color: rgba(245, 245, 245, 1);
+  font-size: 20px;
+}
+.form--section {
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+.toDolist--section{
+  background-color: rgb(158, 172, 49);
+    width: 82%;
+    margin: 10px auto;
+    padding: 15px;
+    color: white;
+    font-weight: 450;
+    padding-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.icon{
+  float: right;
+  color: rgb(70, 68, 68);
+  margin-right: 30px;
+  margin-top: -2px;
+  font-size: 21px;
+}
+.task--edit{
+  width: 60%;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  font-weight: 450;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 1px;
+}
+.task--edit:focus{
+  outline: none;
+  
+}
+.task--text{
+  display: inline-flex;
+  width: 74%;
+}
+
+.button--section{
+  margin-top: 12px;
+    padding: 12px;
+    width: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    background: transparent;
+    color: rgb(64, 64, 141);
+    border: none;
+    font-size: 14px;
+    font-weight: 550;
+    border-radius: 8px;
+}
+
+.button--section.selected{
+  color:white;
+  background-color: rgb(218, 142, 75);
+}
+.button-area{
+  display: flex;
+  justify-content: center;
+}
