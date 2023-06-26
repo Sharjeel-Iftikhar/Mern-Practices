@@ -21,3 +21,5 @@
 - Second paramter to the useEffect function
 - A way for React to know whether it should re-run the effect function 
 not now
+
+Started learning JavaScript with theory lets see how it goes
