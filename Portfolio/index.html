@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Sharjeel Iftikhar</title>
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+</head>
+
+<body class="font-nunito" >
+    <!-- Intro Section -->
+    <div class="h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 relative overflow-hidden">
+        <!-- navbar -->
+        <nav class="fixed w-full bg-white top-0 z-10 dark:bg-slate-900" >
+            <div class="container mx-auto py-5 flex justify-between">
+                <div class="flex justify-between items-center gap-4">
+                    <img src="img/logo.png" alt="logo" class="w-10">
+                    <span class="text-2xl font-bold text-indigo-900 dark:text-white">Sharjeel-Dev.</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 items-center font-bold text-gray-600 uppercase text-sm dark:text-white">
+                    <li >
+                        <a href="#">home</a>
+                    </li>
+                    <li >
+                        <a href="#about">about me</a>
+                    </li>
+                    <li >
+                        <a href="#work">work</a>
+                    </li>
+                    <li >
+                        <a href="#contact">contact</a>
+                    </li>
+                </ul>
+                <img id="moon" src="img/moon.png" alt="moon" class="hidden md:block w-5 object-contain cursor-pointer">
+
+                <div id="hamberger" class="md:hidden space-y-1 cursor-pointer z-20 my-4 flex items-center flex-col">
+                    <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
+                    <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
+                    <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
+                </div>
+                <ul id="menu"
+                    class="hidden bg-indigo-900 dark:bg-slate-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-12 text-white text-center uppercase text-sm">
+                    <li>
+                        <a id="hLink" href="#">home</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#about">about me</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#work">works</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#contact">contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- Intro content -->
+        <!-- Image -->
+        <img class="absolute right-0 bottom-0 h-5/6 object-cover lg:left-0 mx-auto" src="img/me.png">
+        <!-- circle  -->
+        <div
+            class="hidden lg:block absolute right-0 left-0 mx-auto -bottom-1/2 bg-indigo-900 rounded-full w-big h-big -z-10">
+        </div>
+        <!-- animated text -->
+        <div
+            class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-[5rem] md:text-5xl lg:left-[6rem] xl:left-[7rem] xl:text-6xl">
+            <span class="text-gray-600">Full Stack</span>
+            <p id="text" class="text-red-600"></p>
+        </div>
+        <!-- texts -->
+        <div
+            class="hidden lg:flex flex-col gap-5 absolute top-0 bottom-0 right-7 w-1/3 bg-white dark:bg-slate-900 dark:shadow-slate-800 m-auto p-6 h-fit rounded-md shadow-lg">
+            <h1 id="myIntro" class="text-3xl text-indigo-900 dark:text-gray-300 font-bold">Hi, I am Sharjeel</h1>
+            <p class="text-gray-400">"Passionate about user-centric web applications and innovative solutions. Expertise
+                in front-end and back-end technologies. Committed to continuous improvement and efficiency"</p>
+                <div class="flex justify-start gap-6">
+                    <div>
+                        <a href="https://www.instagram.com/_shherryy_/" target="_blank">
+                            <svg xmlns="https://www.instagram.com/_shherryy_/" class="h-5 w-5 cursor-pointer dark:text-white"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="www.linkedin.com/in/sharjeel-iftikhar-0x53" target="_blank">
+                            <svg xmlns="www.linkedin.com/in/sharjeel-iftikhar-0x53" class="h-5 w-5 cursor-pointer dark:text-white"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/Sharjeel-Iftikhar " target="_blank">
+                            <svg xmlns="https://github.com/Sharjeel-Iftikhar" class="h-5 w-5 cursor-pointer dark:text-white"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            <!-- <a class="bg-indigo-600 text-xl px-3 py-2 w-fit text-white font-[4rem] rounded-md" href="#contact">Contact
+                me</a> -->
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about" class="px-10 dark:bg-slate-900">
+        <div class="container mx-auto flex py-36 gap-40 flex-col-reverse lg:flex-row items-center">
+            <!-- left -->
+            <div class="relative">
+                <img class="h-1/4 absolute top-0 left-40 lg:left-3 -z-10" src="img/dots.png">
+                <div class="h-full w-1/2 ml-40 lg:w-full lg:ml-0 rounded-full overflow-hidden ">
+                    <img src="img/mePortrait.jpeg">
+                </div>
+            </div>
+            <div class="my-auto flex flex-col gap-3">
+                <h1 class="text-indigo-900 font-bold">ABOUT ME</h1>
+                <p class="text-gray-400">I developed a passion for programming so I am dedicated in building robust,
+                    efficient and user-friendly <strong class="text-indigo-900"><em>web Technologies and
+                            Products</em></strong>. Also I am interested in areas related to game development and
+                    <strong class="text-indigo-900"><em>3D models rendering </em></strong>for recently working on my
+                    FYP.
+                </p>
+                <p class="text-gray-400"> Whenever possible, I also apply my passion for developing products with
+                    Node.js and Modern
+                    Javascript Library and Frameworks like <strong class="text-indigo-900"><em>Reat.js &
+                            Next.js</em></strong></p>
+
+                <!-- <h2 class="text-gray-400 font-medium">HTML</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="text-gray-400 font-medium">Javascript</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-[70%] bg-indigo-600 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="text-gray-400 font-medium">React</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-[80%] bg-indigo-600 h-1.5 rounded-md"></div>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- My Work -->
+    <div id="work" class="dark:bg-slate-900">
+        <div class="container mx-auto">
+            <!-- top -->
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-900 font-bold">My Recent Works</h1>
+                <p class="w-1/2 text-center text-gray-400">
+                    With constantly exploring emerging technologies and committed to continuous improvement, Here are my
+                    recent projects.
+                </p>
+            </div>
+            <!-- bottom -->
+            <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-5">
+                    <img class="w-full h-full" src="./img/dall-e.png" alt="dall-e" />
+                    <h1 class="font-medium text-lg dark:text-white">DALL-E-Clone</h1>
+                    <p class="text-gray-400">
+                        DALL-E-AI Clone powered by MERN Stack. Unleash your imagination as this cutting-edge technology
+                        combines the creativity of DALL-E with the versatility of MERN, empowering you to generate
+                        stunning images and artworks with just a few clicks. Get ready to redefine the limits of visual
+                        exploration and bring your ideas
+                    </p>
+                    <a class="text-indigo-600 font-semibold text-sm mt-6" target="_blank"
+                        href="https://github.com/Sharjeel-Iftikhar/DALL-E_AI_CLONE">GitHub</a>
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-full" src="./img/tenzies.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Tenzies</h1>
+                    <p class="text-gray-400">
+                        Tenzies Game involves selecting a set of dice and then rolling them repeatedly until all dice
+                        show the same value. The game is played as a single player and the objective is to achieve the
+                        goal of matching all the dice in as few rolls as possible.
+                    </p>
+                    <a class="text-indigo-600 font-semibold text-sm mt-6"
+                        href="https://github.com/Sharjeel-Iftikhar/Mern-Practices/tree/main/Tenzies">GitHub</a>
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-full" src="./img/connectify.png" alt="connectify-img" />
+                    <h1 class="font-medium text-lg dark:text-white">Connectify</h1>
+                    <p class="text-gray-400">
+                        Full Stack social media application using MERN technologies. Fully user friendly design to
+                        connect and share your thoughts and moments with your beloved ones
+                    </p>
+                    <a class="text-indigo-600 font-semibold text-sm mt-6" target="_blank"
+                        href="https://github.com/Sharjeel-Iftikhar/Connectify-Socail-app">GitHub</a>
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-full" src="./img/meme.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Meme Generator</h1>
+                    <p class="text-gray-400">
+                        The Meme Generator App is a fun and creative web application built with React. Unleash your
+                        inner humorist and create hilarious memes in seconds. Whether you're looking to brighten your
+                        day or share a laugh with friends, this app has you covered!
+                        Images are coming from jokes api so user can easily generate memes by writing text on it.
+                    </p>
+                    <a class="text-indigo-600 font-semibold text-sm mt-6" target="_blank"
+                        href="https://github.com/Sharjeel-Iftikhar/Mern-Practices/tree/main/Meme-generator">GitHub</a>
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-[90%]" src="./img/todo.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">ToDo app</h1>
+                    <p class="text-gray-400">
+                        The Todo App is a powerful and efficient task management application, entirely built by me using
+                        React and Redux Toolkit. Stay organized and boost your productivity with this user-friendly web
+                        app.
+                    </p>
+                    <a class="text-indigo-600 font-semibold text-sm mt-6" target="_blank"
+                        href="https://github.com/Sharjeel-Iftikhar/Mern-Practices/tree/main/ToDoList">GitHub</a>
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-full" src="./img/b-card.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Business Card</h1>
+                    <p class="text-gray-400">
+                        The Business Card is a front-end only project that demonstrates how React can be used to create
+                        a functional and attractive user interface for a web application.
+                    </p>
+                    <a class="text-indigo-600 font-semibold text-sm mt-6" target="_blank"
+                        href="https://github.com/Sharjeel-Iftikhar/Mern-Practices/tree/main/Business-Card">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contact -->
+    <div id="contact" class="dark:bg-slate-900">
+        <div class="container mx-auto">
+            <!-- top -->
+            <div class="flex flex-col gap-8 items-center">
+                <h1 class="text-indigo-900 font-bold mt-16">FIND ME ON</h1>
+                <h1 class="text-3xl dark:text-white">Feel free to <strong class="text-indigo-900">connect</strong> with
+                    me</h1>
+                <p class="w-1/2 text-center text-gray-400">
+                    Do you have an idea? Let's discuss it and see what we can do
+                    together.
+                </p>
+                <div class="flex justify-center gap-10 mb-20 mt-8 ">
+                    <div>
+                        <a href="https://www.instagram.com/_shherryy_/" target="_blank">
+                            <svg xmlns="https://www.instagram.com/_shherryy_/" class="h-7 w-7 cursor-pointer dark:text-white"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="www.linkedin.com/in/sharjeel-iftikhar-0x53" target="_blank">
+                            <svg xmlns="www.linkedin.com/in/sharjeel-iftikhar-0x53" class="h-7 w-7 cursor-pointer dark:text-white"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/Sharjeel-Iftikhar " target="_blank">
+                            <svg xmlns="https://github.com/Sharjeel-Iftikhar" class="h-7 w-7 cursor-pointer dark:text-white"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/app.js"></script>
+    <script src="javascript/autotyping.js"></script>
+</body>
+
+</html>
